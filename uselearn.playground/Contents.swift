@@ -229,6 +229,65 @@ SomeClass.add()
 some.minus(1)
 
 
+//下标
+struct TimeTable {
+    let multiplier : Int
+    subscript(index : Int) -> Int{
+    
+        return multiplier * index
+    }
+    
+}
+
+var timeSa = TimeTable(multiplier : 3)
+timeSa[2]
+
+
+//继承
+class BaseClass
+{
+    //初始化
+    init()
+    {
+        print("qqqqq")
+    
+    }
+    
+    var a = ""
+    var b : Double = 3
+    
+    func add(a : Int , b : Int) -> Int {
+        return a+b
+    }
+    
+    //final 定义,不能重写
+//    final func add(a : Int , b : Int) -> Int {
+//        return a+b
+//    }
+    
+}
+
+class subClassA: BaseClass {
+    
+    //初始化重写
+    override init() {
+        super.init()
+        print("aaa")
+    }
+    
+    override func add(a: Int, b: Int) -> Int {
+        super.add(a, b: b)
+        return a*3+b
+    }
+    
+    
+    
+}
+
+var subA = subClassA()
+subA.add(1, b: 2)
+subA.a
+
 
 
 
