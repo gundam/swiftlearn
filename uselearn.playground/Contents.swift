@@ -253,6 +253,14 @@ class BaseClass
     
     }
     
+    convenience  init(a : Int)
+    {
+        print("bbbbb")
+        self.init()
+        
+    }
+    
+    
     var a = ""
     var b : Double = 3
     
@@ -264,6 +272,13 @@ class BaseClass
 //    final func add(a : Int , b : Int) -> Int {
 //        return a+b
 //    }
+    
+    //delloc 析构
+    deinit
+    {
+    
+    
+    }
     
 }
 
@@ -290,7 +305,22 @@ subA.a
 
 
 
+//arc
+class Person {
+    let name: String
+    init(name: String) { self.name = name }
+    var apartment: Apartment?
+    deinit { print("\(name) is being deinitialized") }
+}
 
+
+
+class Apartment {
+    let unit: String
+    init(unit: String) { self.unit = unit }
+    var tenant: Person?
+    deinit { print("Apartment \(unit) is being deinitialized") }
+}
 
 
 
