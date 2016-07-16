@@ -126,7 +126,84 @@ let otherTenEighty = tenEighty
 otherTenEighty.name = "abc"
 print(tenEighty.name)
 otherTenEighty === tenEighty
-hd === cinema
+//hd === cinema === 只能类使用,不能用在struct上
+class DataImporter
+{
+    var fileName = "data.txt"
+    
+    
+}
+//懒加载
+class DataManager {
+    lazy var importer = DataImporter()
+    var data = [String]()
+    
+}
+
+let manager = DataManager()
+manager.importer
+
+
+struct Point {
+    var x = 0.0 , y = 0.0
+    
+    
+}
+
+struct Size {
+    var width = 0.0, height = 0.0
+    
+    
+}
+
+struct Rect {
+    var orgin = Point()
+    var size = Size()
+    var center : Point{
+    
+        get {
+        
+            print("aaabxx")
+            
+            return Point(x: 1, y: 2)
+            
+        }
+//        如果没有set方法,就是readonly属性
+        set {
+        
+            
+            print("qqqqqqq")
+            orgin.x = newValue.x
+            
+        }
+        
+//        //计算属性不能设置观察者,willset 和didset 与  get和set不能共存,lazy 属性也不支持
+//        willSet{
+//        
+//        
+//        }
+//        
+//        
+//        didSet{
+//        
+//        
+//            
+//        }
+    }
+    
+    
+    
+}
+
+
+var rect = Rect()
+rect.center
+rect.orgin.x
+rect.center = Point(x: 2, y: 3)
+rect.orgin.x
+
+
+
 
 
 
