@@ -157,6 +157,9 @@ struct Size {
 }
 
 struct Rect {
+    static var test1 = 1// 类型属性的定义,static前缀
+    
+    
     var orgin = Point()
     var size = Size()
     var center : Point{
@@ -201,6 +204,32 @@ rect.center
 rect.orgin.x
 rect.center = Point(x: 2, y: 3)
 rect.orgin.x
+//rect.test1   类型属性不能用实例访问
+Rect.test1 //说了半天就是class var 嘛
+
+
+//Methods
+
+class SomeClass {
+    var b = 2
+    
+    static func add(){
+        print("aaaaa")
+    }
+    
+    func minus(a : Int) -> Int {
+        return b - a
+    }
+    
+    
+}
+
+var some = SomeClass()
+SomeClass.add()
+some.minus(1)
+
+
+
 
 
 
