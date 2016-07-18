@@ -1,0 +1,12 @@
+PODS:
+  - pop (1.0.7)
+
+DEPENDENCIES:
+  - pop (~> 1.0)
+
+SPEC CHECKSUMS:
+  pop: 2f14a1ea61339767af9e66741b418c831b3844df
+
+PODFILE CHECKSUM: fbb1e96c9844de31fbd6e703aabc1ef210dc53fd
+
+COCOAPODS: 1.0.1
