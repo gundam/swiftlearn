@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "85A6E7362C1D1D1586399767F245C7DB"
-               BuildableName = "pop.framework"
-               BlueprintName = "pop"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "DEC940E11D47A4F200EEDB22"
+               BuildableName = "awe.app"
+               BlueprintName = "awe"
+               ReferencedContainer = "container:awe.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,6 +29,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "DEC940E11D47A4F200EEDB22"
+            BuildableName = "awe.app"
+            BlueprintName = "awe"
+            ReferencedContainer = "container:awe.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -42,15 +51,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "85A6E7362C1D1D1586399767F245C7DB"
-            BuildableName = "pop.framework"
-            BlueprintName = "pop"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintIdentifier = "DEC940E11D47A4F200EEDB22"
+            BuildableName = "awe.app"
+            BlueprintName = "awe"
+            ReferencedContainer = "container:awe.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,6 +70,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "DEC940E11D47A4F200EEDB22"
+            BuildableName = "awe.app"
+            BlueprintName = "awe"
+            ReferencedContainer = "container:awe.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

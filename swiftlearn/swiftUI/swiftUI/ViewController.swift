@@ -33,30 +33,27 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a     nib.
-        testBtn.frame = CGRectMake(100, 20, 30, 20);
-        testBtn.setTitle("xxxx", forState: UIControlState.Normal)
+        testBtn.frame = CGRect(x: 100, y: 100, width: 30, height: 20);
+        testBtn.setTitle("xxxx", for: UIControlState())
         
-        testBtn.backgroundColor = UIColor.redColor()
-        testBtn.titleLabel?.font = UIFont.systemFontOfSize(12)
-        testBtn.setTitleColor(UIColor.blackColor(), forState: .Normal)
+        testBtn.backgroundColor = UIColor.red()
+        testBtn.titleLabel?.font = UIFont.systemFont(ofSize: 12)
+        testBtn.setTitleColor(UIColor.black(), for: UIControlState())
         testBtn.sizeToFit()
-        testBtn.addTarget(self, action: #selector(self.testBtnClcik(_:)), forControlEvents: .TouchUpInside)
+        testBtn.addTarget(self, action: #selector(self.testBtnClcik(_:)), for: .touchUpInside)
         self.view.addSubview(testBtn)
         
-        
-        
-        
-        
-        testLabel.frame = CGRectMake(testBtn.frame.origin.x, testBtn.frame.origin.y + 30, 20, 20)
+     
+        testLabel.frame = CGRect(x: testBtn.frame.origin.x, y: testBtn.frame.origin.y + 30, width: 20, height: 20)
         testLabel.text = "wwwww";
-        testLabel.font = UIFont.systemFontOfSize(14)
-        testLabel.textColor = UIColor.redColor()
+        testLabel.font = UIFont.systemFont(ofSize: 14)
+        testLabel.textColor = UIColor.red()
         testLabel.sizeToFit()
         self.view.addSubview(testLabel)
         
         let image1  = UIImage.init(named: "icon_rank_no1")!
         
-        testImageView.frame = CGRectMake(testLabel.frame.origin.x, testLabel.frame.origin.y + 20 + 10, image1.size.width, image1.size.height)
+        testImageView.frame = CGRect(x: testLabel.frame.origin.x, y: testLabel.frame.origin.y + 20 + 10, width: image1.size.width, height: image1.size.height)
         testImageView.image = image1
         self.view.addSubview(testImageView)
         
@@ -68,8 +65,15 @@ class ViewController: UIViewController {
     }
 
     
-    func testBtnClcik(sender : UIButton) -> Void {
+    func testBtnClcik(_ sender : UIButton) -> Void {
         print("xxxxx")
+        let testVC : testTableViewController = testTableViewController()
+        
+        self.navigationController?.pushViewController(testVC, animated: true)
+        
+        self
+        
+        
     }
 
 }

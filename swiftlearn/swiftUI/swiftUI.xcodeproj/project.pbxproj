@@ -13,6 +13,7 @@
 		DEBAB7B01D39B1BC0007E79A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBAB7AE1D39B1BC0007E79A /* Main.storyboard */; };
 		DEBAB7B21D39B1BC0007E79A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBAB7B11D39B1BC0007E79A /* Assets.xcassets */; };
 		DEBAB7B51D39B1BC0007E79A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBAB7B31D39B1BC0007E79A /* LaunchScreen.storyboard */; };
+		DEDD06161D47A840007505EC /* testTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDD06151D47A840007505EC /* testTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DEBAB7B11D39B1BC0007E79A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEBAB7B41D39B1BC0007E79A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEBAB7B61D39B1BC0007E79A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEDD06151D47A840007505EC /* testTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				DEBAB7B11D39B1BC0007E79A /* Assets.xcassets */,
 				DEBAB7B31D39B1BC0007E79A /* LaunchScreen.storyboard */,
 				DEBAB7B61D39B1BC0007E79A /* Info.plist */,
+				DEDD06151D47A840007505EC /* testTableViewController.swift */,
 			);
 			path = swiftUI;
 			sourceTree = "<group>";
@@ -118,11 +121,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = gundamyhl;
 				TargetAttributes = {
 					DEBAB7A61D39B1BC0007E79A = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -212,6 +216,7 @@
 			files = (
 				DEBAB7AD1D39B1BC0007E79A /* ViewController.swift in Sources */,
 				DEBAB7AB1D39B1BC0007E79A /* AppDelegate.swift in Sources */,
+				DEDD06161D47A840007505EC /* testTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +334,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wl.swiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -341,6 +347,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wl.swiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
